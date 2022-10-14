@@ -1,0 +1,89 @@
+/* Header y nav */
+
+.ConfBsAs {
+    color: white;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.nav-link {
+    color: gray;
+}
+
+.nav-link:hover {
+    color: rgb(158, 158, 158);
+}
+
+.comprarTickets {
+    color: green;
+}
+
+.laConferencia {
+    color: white;
+}
+
+.navbar-img {
+    max-width: 120px;
+}
+
+/* Fin Header y nav */
+
+/* Categorias */
+
+.categoria {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoria-box {
+    margin: 50px 10px 5px;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+    border-radius: 0px;
+
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.categoria-box h3 {
+    font-size: 24px;
+}
+
+.categoria-box strong {
+    font-size: 20px;
+}
+
+.categoria-box .categoria-text-importante{
+    font-size: 14px;
+    color: gray;
+}
+
+.categoria-estudiante {
+    border: 1px solid rgb(132, 220, 255);
+}
+
+.categoria-trainee {
+    border: 1px solid rgb(132, 255, 235);
+}
+
+.categoria-junior {
+    border: 1px solid rgb(255, 232, 101);
+}
+
+/* Fin categorias */
+
+/* Formulario */
+
+
+
+/* Fin formulario */
+

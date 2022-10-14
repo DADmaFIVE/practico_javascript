@@ -5,9 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg mx-auto">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-img" src="./img/codoacodo.png" alt="Logo" class="d-inline-block align-text-top">
+                    <span class="ConfBsAs">Conf Bs As</span>
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link laConferencia" href="#">La conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conviértete en orador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link comprarTickets" href="#">Comprar tickets</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
     
+    <main>
+        <section class="categoria">
+            <article class="categoria-box categoria-estudiante card">
+                <h3>Estudiante</h3>
+                <p>Tienen un descuento</p>
+                <strong>80%</strong>
+                <p class="categoria-text-importante">* presentar documentación</p>
+            </article>
+            <article class="categoria-box categoria-trainee card">
+                <h3>Trainee</h3>
+                <p>Tienen un descuento</p>
+                <strong>50%</strong>
+                <p class="categoria-text-importante">* presentar documentación</p>
+            </article>
+            <article class="categoria-box categoria-junior card">
+                <h3>Junior</h3>
+                <p>Tienen un descuento</p>
+                <strong>15%</strong>
+                <p class="categoria-text-importante">* presentar documentación</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3>VENTA</h3>
+                <h3>VALOR DE TICKET</h3>
+            </article>
+            <article class="formulario">
+                <form class="container" action="">
+                    <div class="row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="First name" aria-label="Nombre">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Last name" aria-label="Apellido">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Correo">
+                    <div class="row">
+                        <div class="col">
+                            <label for="formGroupExampleInput2" class="form-label">Cantidad</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="cantidad">
+                        </div>
+                        <div class="col">
+                            <label for="inputState" class="form-label">Categoria</label>
+                            <select id="inputState" class="form-select">
+                              <option selected>Estudiante</option>
+                              <option>Trainee</option>
+                              <option>Junior</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="alert alert-primary row" role="alert">
+                        Total a pagar: $
+                    </div>
+                    <div class="row">
+                        <input class="btn btn-success col" type="reset" value="Borrar">
+                        <button class="btn btn-success col" type="submit">Resumen</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
