@@ -63,42 +63,50 @@
                 <p class="categoria-text-importante">* presentar documentación</p>
             </article>
         </section>
-        <section>
-            <article>
+        <section class="ventas">
+            <article class="ventas-text">
                 <h3>VENTA</h3>
-                <h3>VALOR DE TICKET</h3>
+                <h4>VALOR DE TICKET $200</h3>
             </article>
             <article class="formulario">
                 <form class="container" action="">
                     <div class="row">
                         <div class="col">
-                          <input type="text" class="form-control" placeholder="First name" aria-label="Nombre">
+                          <input id="fname" type="text" class="form-control mb-3" placeholder="Nombre" aria-label="Nombre">
                         </div>
                         <div class="col">
-                          <input type="text" class="form-control" placeholder="Last name" aria-label="Apellido">
+                          <input id="lname" type="text" class="form-control mb-3" placeholder="Apellido" aria-label="Apellido">
                         </div>
                     </div>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Correo">
+
+                    <div>
+                        <label id="correo_label" for="correo" class="form-label" style="color: red"></label>
+                        <input type="text" class="form-control mb-3" id="correo" placeholder="Correo">
+                    </div>
+
                     <div class="row">
                         <div class="col">
-                            <label for="formGroupExampleInput2" class="form-label">Cantidad</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="cantidad">
+                            <label for="cantidad" class="form-label">Cantidad</label>
+                            <input type="text" class="form-control mb-3" id="cantidad" placeholder="cantidad">
                         </div>
                         <div class="col">
                             <label for="inputState" class="form-label">Categoria</label>
-                            <select id="inputState" class="form-select">
-                              <option selected>Estudiante</option>
-                              <option>Trainee</option>
-                              <option>Junior</option>
+                            <select id="inputState" class="form-select mb-3">
+                                <option selected>Ninguna</option>
+                                <option>Estudiante</option>
+                                <option>Trainee</option>
+                                <option>Junior</option>
                             </select>
                         </div>
                     </div>
-                    <div class="alert alert-primary row" role="alert">
+
+                    <div id="TotalPagar" class="alert alert-primary row" role="alert">
                         Total a pagar: $
                     </div>
-                    <div class="row">
-                        <input class="btn btn-success col" type="reset" value="Borrar">
-                        <button class="btn btn-success col" type="submit">Resumen</button>
+
+                    <div class="row botones">
+                        <input id="borrar" class="btn btn-success col" type="reset" value="Borrar">
+                        <input id="submit" class="btn btn-success col" type="submit" value="Resumen">
                     </div>
                 </form>
             </article>
@@ -106,5 +114,6 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src='./js/index.js'></script>
 </body>
 </html>
