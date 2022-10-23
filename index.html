@@ -69,7 +69,7 @@
                 <h4>VALOR DE TICKET $200</h3>
             </article>
             <article class="formulario">
-                <form class="container" action="">
+                <form class="container" action="#TotalPagar">
                     <div class="row">
                         <div class="col">
                           <input id="fname" type="text" class="form-control mb-3" placeholder="Nombre" aria-label="Nombre">
@@ -80,7 +80,6 @@
                     </div>
 
                     <div>
-                        <label id="correo_label" for="correo" class="form-label" style="color: red"></label>
                         <input type="text" class="form-control mb-3" id="correo" placeholder="Correo">
                     </div>
 
@@ -105,13 +104,54 @@
                     </div>
 
                     <div class="row botones">
-                        <input id="borrar" class="btn btn-success col" type="reset" value="Borrar">
+                        <input id="borrar" class="btn btn-success col" type="reset" onclick="Reinicio()" value="Borrar">
                         <input id="submit" class="btn btn-success col" type="submit" value="Resumen">
                     </div>
                 </form>
             </article>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <ul class="nav align-items-center mb-5 footer">
+                <li class="nav-item">
+                    <a href="" class="nav-link link-footer">
+                        Preguntas frecuentes
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link link-footer">
+                        Contáctanos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link link-footer">
+                        Prensa
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link link-footer">
+                        Conferencias
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link link-footer">
+                        Términos y condiciones
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link link-footer">
+                        Privacidad
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link link-footer">
+                        Estudiantes
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src='./js/index.js'></script>

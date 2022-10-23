@@ -1,0 +1,18 @@
+// Correo mal escrito
+<div class="input-group has-validation">
+<input type="text" class="form-control is-invalid mb-3" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+<div id="validationServerUsernameFeedback" class="invalid-feedback">
+Introduzca un correo válido.
+</div>
+</div>
+
+// Introduciste mal los datos
+<div class="alert alert-danger d-flex align-items-center" role="alert">
+<div>
+Introduciste mal los datos
+</div>
+</div>
+
+<button class="btn btn-success col" type="submit" onclick="MostrarResumen()">Resumen</button>
+
+<label id="correo_label" for="correo" class="form-label" style="color: red"></label>

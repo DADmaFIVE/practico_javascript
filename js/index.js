@@ -41,32 +41,32 @@ function isPositiveInteger(n) {
     return 0 === n % (!isNaN(parseFloat(n)) && 0 <= ~~n);
 }
 
+const Reinicio = () => {
+    fname.classList.remove("is-invalid");
+    lname.classList.remove("is-invalid");
+    correo.classList.remove("is-invalid");
+    cantidad.classList.remove("is-invalid");
+    total_pagar.textContent = "Total a pagar: $";
+}
+
 form.onsubmit = function(e) {
 
-    if (fname.value === '' || lname.value === '') {
-        e.preventDefault();
-        if (fname.value === '') {
-            fname.classList.add("is-invalid");
-        } else {
-            fname.classList.remove("is-invalid");
-        }
-
-        if (lname.value === '') {
-            lname.classList.add("is-invalid");
-        } else {
-            lname.classList.remove("is-invalid");
-        }
+    if (fname.value === '') {
+        fname.classList.add("is-invalid");
     } else {
-        //MostrarResumen();
+        fname.classList.remove("is-invalid");
+    }
+    if (lname.value === '') {
+        lname.classList.add("is-invalid");
+    } else {
+        lname.classList.remove("is-invalid");
     }
 
     let arroba = correo.value.indexOf('@');
     if (correo.value === '' || arroba === -1) {
         correo.classList.add("is-invalid");
-        correo_label.textContent = "No ingresaste un correo válido";
     } else {
         correo.classList.remove("is-invalid");
-        correo_label.textContent = "";
     }
 
     if (isPositiveInteger(cantidad.value) === false || cantidad.value === '') {
@@ -74,10 +74,6 @@ form.onsubmit = function(e) {
     } else {
         cantidad.classList.remove("is-invalid");
         let index = selector.selectedIndex;
-        total_pagar.textContent = index;
-        //MostrarResumen(index, Number(cantidad.value));
+        MostrarResumen(index, Number(cantidad.value));
     }
-
-
-
 }
